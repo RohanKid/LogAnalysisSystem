@@ -10,18 +10,18 @@ Wikipediaのアクセスログの情報を使い、サイトのユーザーの�
 1.最もビュー数の多い記事を、指定した記事数分だけビュー数が多い順にソートし、ドメインコードとページタイトル、ビュー数を提示する
 
 （例）コマンドライン上で2記事と指定した場合、下記を表示する
-
-  ”en”, “Main_Page”, 120
-
-  ”en”, ”Wikipedia:Umnyango_wamgwamanda”, 112
+  ```bash
+  en Main_Page 120
+  en Wikipedia:Umnyango_wamgwamanda 112
+  ```
 
 2.指定したドメインコードに対して、人気順にソートし、ドメインコード名と合計ビュー数を提示する
 
 （例）コマンドライン上で「en de」と指定した場合、下記を表示する
-
-  ”en”, 10700
-
-  ”de”, 5300
+  ```bash
+  en 10700
+  de 5300
+  ```
 
 ## 解析に使用するデータ
 
@@ -48,7 +48,7 @@ https://dumps.wikimedia.org/other/pageviews/2021/2021-12/
 
 サンプル(先頭5行)
 
-```text
+```bash
 aa Main_Page 4 0
 aa Wikipedia 1 0
 aa Wikipedia:Statistics 1 0
